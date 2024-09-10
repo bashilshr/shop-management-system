@@ -3,7 +3,8 @@ def loop(l):
     while loop:
         yn = input("Do you want to continue(Y/N): ")
         if yn.upper() == "N":
-            l, loop = False, False
+            loop = False
+            l = False
             return False
         elif yn.upper() == "Y":
             loop = False
@@ -42,7 +43,7 @@ def laptopQuantity(dict,lap_num):
     loop_test = True
     while loop_test:
         try:
-            quantity_laptop = int(input("Enter the laptop quantity you want to buy : "))
+            quantity_laptop = int(input("Enter the laptop quantity you want to sell : "))
         except ValueError:
             print("Reenter your input")
         else:

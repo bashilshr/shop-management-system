@@ -11,7 +11,7 @@ def bill_maker(name,address,phone,list,bill_num,date,time):
 
     loop= True
     while loop:
-        transport = input("Do you want transportation: ")
+        transport = input("Do you want transportation: ").upper()
         if transport == "y":
             loop = False
         elif transport =="n":
