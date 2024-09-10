@@ -11,7 +11,7 @@ def bill_maker(name,address,phone,list,bill_num,date,time):
 
     loop= True
     while loop:
-        transport = input("Do you want transportation: ")
+        transport = input("Do you want transportation: ").upper()
         if transport == "y":
             loop = False
         elif transport =="n":
@@ -27,6 +27,7 @@ def bill_maker(name,address,phone,list,bill_num,date,time):
     print(f"\t\t\tPhone : {phone}")
     print(f"\t\t\tBill No: {bill_num}")
     print(f"\t\t\tAddress {address}")
+    print(f"\t\t\tTime: {time}")
     for y in range(len(list)):
         value = list[y][1].replace('',"")
         print(f"Laptop Name: {list[y][0]}\t\tlaptop brand :{value}")

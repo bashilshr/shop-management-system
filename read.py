@@ -1,12 +1,12 @@
 def read_laptop():
     laptops={} #dictionary for storing the content of files
     File = open('laptops.txt','r')#opening the laptop file using read mode
-    lap_id = 1 #to keep track of laptop's ID
+    laptop_id = 1 #to keep track of laptop's ID
     for a in File:#iteration infinite.
         a = a.replace('\n', '')#repalcing space with n\.
-        laptops. update({lap_id: a.split(',')})
+        laptops. update({laptop_id: a.split(',')})
 
-        lap_id += 1
+        laptop_id += 1
     File.close()
     return laptops
 
